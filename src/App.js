@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Square from './Square';
+import InfoCard from './InfoCard';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      // <div className="square">
+      //   <Square tColor = "white" bgColor = "blue" />
+      //   <Square tColor = "blue" bgColor = "red" />
+      //   <Square tColor = "green" bgColor = "pink" />
+      // </div>
+
+      <div className="center">
+        <InfoCard title = "A Very good title" description = "A block of text here" imgPath="./logo.svg" />
       </div>
     );
   }
